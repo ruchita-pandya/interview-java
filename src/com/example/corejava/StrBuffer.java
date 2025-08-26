@@ -7,5 +7,8 @@ public class StrBuffer {
         buffer.insert(9,"come!");
         buffer.delete(5,9);
         System.out.println(buffer);
+        buffer.replace(5,10,"java");
+        buffer.reverse();
+        System.out.println(buffer);
     }
 }
