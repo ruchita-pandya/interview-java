@@ -1,4 +1,4 @@
-package com.example.corejava;
+package com.example.corejava.stringdemo;
 
 public class StrBuffer {
     public static void main(String[] args) {
@@ -10,5 +10,6 @@ public class StrBuffer {
         buffer.replace(5,10,"java");
         buffer.reverse();
         System.out.println(buffer);
+        System.out.println(buffer.charAt(5));
     }
 }
