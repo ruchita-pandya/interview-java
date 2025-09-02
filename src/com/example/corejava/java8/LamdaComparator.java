@@ -3,6 +3,7 @@ package com.example.corejava.java8;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 class Person {
@@ -48,6 +49,7 @@ public class LamdaComparator {
         list.add(new Person("Abhay",24));
 
         Collections.sort(list,(a, b)->a.getName().compareTo(b.getName()));
+        list.stream().sorted(Comparator.comparing(Person::getAge)).forEach(System.out::println);
         System.out.println(list);
     }
 
